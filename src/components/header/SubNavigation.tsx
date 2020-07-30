@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, makeStyles, Box, Toolbar } from '@material-ui/core';
+import { Link, makeStyles, Toolbar } from '@material-ui/core';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);

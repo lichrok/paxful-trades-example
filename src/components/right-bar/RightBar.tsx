@@ -24,7 +24,7 @@ const RightBar: React.FC = () => {
     setInterval(() => {
       dispatch(asyncGetTradeInfo());
     }, 3000);
-  }, []);
+  }, [dispatch]);
 
   const barInner = (
     <div className={classes.root}>

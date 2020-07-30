@@ -36,7 +36,7 @@ const TraidingCard: React.FC<TraidingCardProps> = ({ selected, tradeInfo }) => {
     setInterval(() => {
       dispatch(asyncGetTradeInfo());
     }, REFRESH_CURRENCY_TIMEOUT);
-  }, []);
+  }, [dispatch]);
 
   const currencyTemplate = (rateFloat: number) => {
     return `${tradeInfo.amount} USD (${(tradeInfo.amount / rateFloat).toFixed(6)} BTC)`;
